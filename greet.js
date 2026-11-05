@@ -6,4 +6,8 @@ function farewell(name) {
   return "Bye, " + name;
 }
 
-module.exports = { greet, farewell };
+function isEmail(s) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+}
+
+module.exports = { greet, farewell, isEmail };
