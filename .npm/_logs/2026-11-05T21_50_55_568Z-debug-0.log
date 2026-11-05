@@ -1,0 +1,27 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.9.9
+2 info using node@v22.23.4
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/work/testingforclaude-0xk9iqat/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm exec typescript@5.6.3 tsc --noEmit --strict --noUnusedLocals --noUnusedParameters app.ts
+7 verbose argv "exec" "--yes" "--" "typescript@5.6.3" "tsc" "--noEmit" "--strict" "--noUnusedLocals" "--noUnusedParameters" "app.ts"
+8 verbose logfile logs-max:10 dir:/work/testingforclaude-0xk9iqat/.npm/_logs/2026-11-05T21_50_55_568Z-
+9 verbose logfile /work/testingforclaude-0xk9iqat/.npm/_logs/2026-11-05T21_50_55_568Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 http fetch GET 200 https://registry.npmjs.org/typescript 785ms (cache miss)
+13 verbose stack Error: could not determine executable to run
+13 verbose stack     at getBinFromManifest (/usr/local/lib/node_modules/npm/node_modules/libnpmexec/lib/get-bin-from-manifest.js:17:23)
+13 verbose stack     at exec (/usr/local/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:202:15)
+13 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+13 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5)
+14 verbose pkgid typescript@5.6.3
+15 error could not determine executable to run
+16 verbose cwd /work/testingforclaude-0xk9iqat
+17 verbose os Linux 6.18.56-cloudflare-microvm-2026.10.9
+18 verbose node v22.23.4
+19 verbose npm  v10.9.9
+20 verbose exit 1
+21 verbose code 1
+22 error A complete log of this run can be found in: /work/testingforclaude-0xk9iqat/.npm/_logs/2026-11-05T21_50_55_568Z-debug-0.log
