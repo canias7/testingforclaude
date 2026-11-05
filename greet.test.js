@@ -1,6 +1,6 @@
 const { test } = require("node:test");
 const assert = require("node:assert/strict");
-const { greet } = require("./greet");
+const { greet, farewell } = require("./greet");
 
 test("greet returns Hello plus the name", () => {
   assert.equal(greet("Ada"), "Hello, Ada");
@@ -9,4 +9,8 @@ test("greet returns Hello plus the name", () => {
 test("greet concatenates whatever name it is given", () => {
   assert.equal(greet(""), "Hello, ");
   assert.equal(greet("world"), "Hello, world");
+});
+
+test("farewell returns Bye plus the name", () => {
+  assert.equal(farewell("Ada"), "Bye, Ada");
 });
