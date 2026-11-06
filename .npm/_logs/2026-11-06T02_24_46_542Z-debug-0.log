@@ -1,0 +1,29 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.9
+2 info using node@v22.23.4
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/work/testingforclaude-48xa6zxm/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm install
+7 verbose argv "install"
+8 verbose logfile logs-max:10 dir:/work/testingforclaude-48xa6zxm/.npm/_logs/2026-11-06T02_24_46_542Z-
+9 verbose logfile /work/testingforclaude-48xa6zxm/.npm/_logs/2026-11-06T02_24_46_542Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly idealTree buildDeps
+13 silly fetch manifest is-number@^7.0.0
+14 silly packumentCache full:https://registry.npmjs.org/is-number cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/is-number 65ms (cache miss)
+16 silly packumentCache full:https://registry.npmjs.org/is-number set size:undefined disposed:false
+17 silly placeDep ROOT is-number@7.0.0 OK for: is-number-check@1.0.0 want: ^7.0.0
+18 silly reify moves {}
+19 http cache is-number@https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 0ms (cache hit)
+20 silly tarball no local data for is-number@https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz. Extracting by manifest.
+21 http fetch GET 200 https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 30ms (cache miss)
+22 silly ADD node_modules/is-number
+23 verbose cwd /work/testingforclaude-48xa6zxm
+24 verbose os Linux 6.18.56-cloudflare-microvm-2026.10.9
+25 verbose node v22.23.4
+26 verbose npm  v10.9.9
+27 verbose exit 0
+28 info ok
