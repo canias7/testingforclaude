@@ -1,3 +1,3 @@
 def f():
 	if True:
-		return 1
+		return 2
