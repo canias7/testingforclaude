@@ -1,1 +1,1 @@
-He said “hello” and ‘bye’.
+He said “hi there” and ‘later’.

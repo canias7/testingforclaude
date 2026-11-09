@@ -1,3 +1,4 @@
-first
-second
+FIRST
+SECOND
+inserted
 third
