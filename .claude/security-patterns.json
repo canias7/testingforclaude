@@ -1,0 +1,1 @@
+{"patterns": [{"rule_name": "internal_key", "substrings": ["INTERNAL_KEY="], "reminder": "Never commit internal keys."}]}
