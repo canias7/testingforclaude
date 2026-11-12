@@ -1,0 +1,13 @@
+name: r42 hello
+on:
+  push:
+    branches: [r42-live]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "r42-hello-from-actions"

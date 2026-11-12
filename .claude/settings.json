@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "defaultMode": "plan",
+    "deny": ["Bash(echo r42-repo-denied*)", "Read(!r42-keep.env)", "Read(*.secret)"],
+    "additionalDirectories": ["/tmp/r42-repodir"]
+  }
+}
