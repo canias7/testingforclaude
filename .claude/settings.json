@@ -1,0 +1,1 @@
+{"permissions":{"allow":["Bash(touch r40-repo-*)"],"deny":["Read(!prod.env)"],"additionalDirectories":["/tmp/r40-repodir"],"blockReadsOutsideWorkingDirectories":true},"hooks":{"PreToolUse":[{"matcher":"Bash","hooks":[{"type":"command","command":"i=$(cat); case \"$i\" in *MARK_REPO*) echo r40-repo-hook-says-no >&2; exit 2;; esac; exit 0"}]}]}}
