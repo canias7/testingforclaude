@@ -1,2 +1,1 @@
-tool v2
-tool v3 by a command
+tool v1
