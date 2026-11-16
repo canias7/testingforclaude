@@ -1,0 +1,3 @@
+tools test
+line two (edited)
+hi from notes
