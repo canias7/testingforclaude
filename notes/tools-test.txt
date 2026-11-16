@@ -1,0 +1,5 @@
+hi from the tools test
+second line
+third line
+edited line: hi again
+heading colour: red
