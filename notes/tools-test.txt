@@ -1,0 +1,3 @@
+Tools test notes
+Created to exercise write, then edit.
+Line three stays put.
