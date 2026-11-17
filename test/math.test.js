@@ -1,6 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { add, multiply, average } from "../src/math.js";
+import { add, multiply } from "../src/math.js";
+import { average } from "../src/stats.js";
 
 describe("add", () => {
   it("adds two numbers", () => {
@@ -29,5 +30,9 @@ describe("average", () => {
 
   it("averages a single value", () => {
     assert.equal(average([10]), 10);
+  });
+
+  it("returns 0 for an empty list", () => {
+    assert.equal(average([]), 0);
   });
 });
