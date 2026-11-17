@@ -1,6 +1,7 @@
 const { describe, it } = require("node:test");
 const assert = require("node:assert/strict");
-const { add, multiply, average } = require("../src/math");
+const { add, multiply } = require("../src/math");
+const { average } = require("../src/stats");
 
 describe("add", () => {
   it("adds two numbers", () => {
@@ -29,5 +30,9 @@ describe("average", () => {
 
   it("averages a single value", () => {
     assert.equal(average([10]), 10);
+  });
+
+  it("returns 0 for an empty list", () => {
+    assert.equal(average([]), 0);
   });
 });
