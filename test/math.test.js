@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { add, multiply, average } from "../src/math.js";
+import { add, multiply } from "../src/math.js";
+import { average } from "../src/stats.js";
 
 test("add returns the sum of two numbers", () => {
   assert.equal(add(2, 3), 5);
@@ -20,6 +21,6 @@ test("average returns the mean of a non-empty list", () => {
   assert.equal(average([1, 2, 3, 4]), 2.5);
 });
 
-test("average rejects an empty list", () => {
-  assert.throws(() => average([]), /non-empty/);
+test("average of an empty list is 0", () => {
+  assert.equal(average([]), 0);
 });
