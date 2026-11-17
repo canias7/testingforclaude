@@ -1,0 +1,4 @@
+Tools test notes
+hi from the scratch repo
+created to exercise write, edit, grep, and glob
+edited: second pass added this line
