@@ -1,0 +1,37 @@
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
+import { add, average, multiply } from "../src/math.js";
+
+describe("add", () => {
+  it("adds two numbers", () => {
+    assert.equal(add(2, 3), 5);
+  });
+
+  it("adds negatives", () => {
+    assert.equal(add(-1, 4), 3);
+  });
+});
+
+describe("multiply", () => {
+  it("multiplies two numbers", () => {
+    assert.equal(multiply(2, 3), 6);
+  });
+
+  it("multiplies by zero", () => {
+    assert.equal(multiply(5, 0), 0);
+  });
+});
+
+describe("average", () => {
+  it("averages a list of numbers", () => {
+    assert.equal(average([2, 4, 6]), 4);
+  });
+
+  it("averages a single value", () => {
+    assert.equal(average([10]), 10);
+  });
+
+  it("rejects an empty list", () => {
+    assert.throws(() => average([]), /non-empty/);
+  });
+});
