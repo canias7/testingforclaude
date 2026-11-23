@@ -1,1 +1,1 @@
-Enter plan mode, then present a one-step plan (create t/b.txt with 'b') for my approval, and carry it out once approved.
+red
