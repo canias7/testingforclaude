@@ -28,5 +28,10 @@
         ]
       }
     ]
+  },
+  "permissions": {
+    "deny": [
+      "KillShell"
+    ]
   }
 }
