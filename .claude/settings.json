@@ -1,8 +1,4 @@
 {
-  "env": {
-    "CLAUDE_CODE_USE_POWERSHELL_TOOL": "1"
-  },
-  "bashOutputMaxChars": 1000,
   "hooks": {
     "PostToolUse": [
       {
@@ -25,6 +21,11 @@
           }
         ]
       }
+    ]
+  },
+  "permissions": {
+    "deny": [
+      "Bash"
     ]
   }
 }
