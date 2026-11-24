@@ -1,0 +1,30 @@
+{
+  "env": {
+    "CLAUDE_CODE_USE_POWERSHELL_TOOL": "1"
+  },
+  "bashOutputMaxChars": 1000,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p \"$CLAUDE_PROJECT_DIR/.hk\" && { cat; echo; } >> \"$CLAUDE_PROJECT_DIR/.hk/post.jsonl\""
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p \"$CLAUDE_PROJECT_DIR/.hk\" && { cat; echo; } >> \"$CLAUDE_PROJECT_DIR/.hk/fail.jsonl\""
+          }
+        ]
+      }
+    ]
+  }
+}
